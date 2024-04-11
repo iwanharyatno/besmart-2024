@@ -1,22 +1,28 @@
-const output = document.querySelector(".screen");
+const layar = document.querySelector(".screen");
 
 document
   .querySelector(".calculator-body")
-  .addEventListener("click", function (e) {
+  .addEventListener("click", function (event) {
+    if (event.target.tagName !== "INPUT") return;
 
-    if (e.target.tagName === "INPUT") {
-      if (e.target.classList.contains("action-clear")) {
-        output.innerText = "";
-      } else if (e.target.classList.contains("action-backspace")) {
-        output.innerText = output.innerText.toString().slice(0, -1);
-      } else if (e.target.classList.contains("action-evaluate")) {
-        try {
-          output.innerText = eval(output.innerText);
-        } catch (err) {
-          output.innerText = "Error";
-        }
-      } else {
-        output.innerText += e.target.value;
-      }
+    if (event.target.classList.contains("action-clear")) {
+      layar.innerText = "";
+      return;
     }
+    
+    if (event.target.classList.contains("action-backspace")) {
+      layar.innerText = layar.innerText.slice(0, -1);
+      return;
+    }
+    
+    if (event.target.classList.contains("action-evaluate")) {
+      try {
+        layar.innerText = eval(layar.innerText);
+      } catch (err) {
+        layar.innerText = "Error";
+      }
+      return;
+    }
+    
+    layar.innerText += event.target.value;
   });
