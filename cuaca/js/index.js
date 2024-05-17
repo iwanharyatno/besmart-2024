@@ -37,9 +37,9 @@ async function getWeather(city = 'purwokerto') {
         cuaca1Wind.innerText = result.list[1].wind.speed + " km/hr";
         cuaca1humidity.innerText = result.list[1].main.humidity + "%";
 
-        cuaca2Temp.innerText = result.list[1].main.temp + "°C"
-        cuaca2Wind.innerText = result.list[1].wind.speed + " km/hr";
-        cuaca2humidity.innerText = result.list[1].main.humidity + "%";
+        cuaca2Temp.innerText = result.list[2].main.temp + "°C"
+        cuaca2Wind.innerText = result.list[2].wind.speed + " km/hr";
+        cuaca2humidity.innerText = result.list[2].main.humidity + "%";
 
         cuaca3Temp.innerText = result.list[3].main.temp + "°C"
         cuaca3Wind.innerText = result.list[3].wind.speed + " km/hr";
