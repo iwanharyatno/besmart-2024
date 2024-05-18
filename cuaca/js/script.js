@@ -69,18 +69,12 @@ function getImage(weather) {
         src = 'image/clouds.png';
     } else if (weather == 'drizzle') {
         src = 'image/drizzle.png';
-    } else if (weather == 'humidity') {
-        src = 'image/humidity.png';
     } else if (weather == 'mist') {
         src = 'image/mist.png';
     } else if (weather == 'rain') {
         src = 'image/rain.png';
-    } else if (weather == 'search') {
-        src = 'image/search.png';
     } else if (weather == 'snow') {
         src = 'image/snow.png';
-    } else if (weather == 'wind') {
-        src = 'image/wind.png';
     }
 
     return src;
