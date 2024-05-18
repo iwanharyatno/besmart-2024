@@ -9,12 +9,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     background-color: #1766FF;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-weight: 100;
 }
 
@@ -29,6 +30,7 @@ h1,h2,h3 {
     padding: 18px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     color: white;
+    width: 100%;
 }
 
 .form-lokasi {
@@ -52,6 +54,10 @@ h1,h2,h3 {
     color: white;
 }
 
+#tombol-cari:hover {
+    cursor: pointer;
+}
+
 .cuaca-utama {
     text-align: center;
     margin: 12px 0;
@@ -63,13 +69,14 @@ h1,h2,h3 {
     text-align: left;
 }
 
-.cuaca-utama-wind, .cuaca-utama-humidity {
+.cuaca-utama-wind,
+.cuaca-utama-humidity {
     padding: 8px 12px;
 }
 
 .daftar-cuaca-mendatang {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -115,6 +122,7 @@ h1,h2,h3 {
     border-style: solid;
     flex-grow: 1;
 }
+
 .card-cuaca-humidity {
     border-top: 1px solid white;
     flex-grow: 1;
@@ -128,4 +136,19 @@ h1,h2,h3 {
 .card-cuaca-humidity img {
     height: 18px;
     width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        align-items: center;
+    }
+    
+    .container {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .daftar-cuaca-mendatang {
+        flex-direction: row;
+    }
 }
