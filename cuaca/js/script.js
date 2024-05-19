@@ -22,8 +22,9 @@ const cuaca3Wind = document.getElementById('cuaca-3-wind');
 const cuaca3humidity = document.getElementById('cuaca-3-humidity');
 
 async function getWeather(city = 'purwokerto') {
-    console.log("loading");
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=d8b21c07ae373d57cedb303d944e393e&units=metric`;
+    const appId = 'd8b21c07ae373d57cedb303d944e393e';
+    const units = 'metric'
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${appId}&units=${units}`;
 
     return await fetch(url, {
         method: 'GET',
@@ -63,6 +64,7 @@ async function getWeather(city = 'purwokerto') {
 function getImage(weather) {
     let src = 'image/clear.png';
     weather = weather.toLowerCase();
+
     if (weather == 'clear') {
         src = 'image/clear.png';
     } else if (weather == 'clouds') {
@@ -80,11 +82,11 @@ function getImage(weather) {
     return src;
 }
 
-getWeather()
-
 function getByCity() {
     const lokasiValue = lokasi.value;
     kota.innerText = lokasiValue;
     
     getWeather(lokasiValue)
 }
+
+getWeather()
