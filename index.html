@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeSmart Programming Projects 2024</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="hero-title">Programming BeSmart<br><span class="highlight">Projects Gallery</span> 2024</h1>
+    </header>
+    <section class="projects">
+        <article class="project-card p-porto">
+            <img src="images/portfolio.png" alt="" class="project-image">
+            <div class="project-description">
+                <h2><a href="portfolio/" target="_blank">Website Portfolio</a></h2>
+                <p>Membuat website portfolio dari 0 buat yang gatau programming dengan menggunakan html,css dan menerapkan best practices dalam proses pembuatannya.</p>
+            </div>
+        </article>
+        <article class="project-card p-kalk">
+            <img src="images/kalkulator.png" alt="" class="project-image">
+            <div class="project-description">
+                <h2><a href="kalkulator/" target="_blank">Website Kalkulator Sederhana</a></h2>
+                <p>Membuat aplikasi kalkulator digital sederhana menggunakan html css dan javascript. Nantinya kita bakal bisa melakukan operasi aritmatika dasar lewat kalkulator yang kita buat sendiri.</p>
+            </div>
+        </article>
+        <article class="project-card p-cuaca">
+            <img src="images/cuaca.png" alt="" class="project-image">
+            <div class="project-description">
+                <h2><a href="cuaca/" target="_blank">Aplikasi Cuaca</a></h2>
+                <p>Membuat website yang tidak hanya html dan css tetapi ditambah javascript yang akan digunakan untuk mendapatkan data dari website openweatherapi. Dengan belajar membuat website kalian sudah mulai lebih awal mata kuliah web.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        &copy; 2024 Programming Division
+    </footer>
+
+    <script>
+        const slideUp = {
+            distance: '100px',
+            origin: 'bottom',
+            opacity: 0
+        };
+
+        ScrollReveal().reveal('.hero-title', slideUp);
+
+        ScrollReveal().reveal('.p-porto');
+        ScrollReveal().reveal('.p-kalk', {
+            delay: 0.3,
+            scale: 0.8
+        });
+        ScrollReveal().reveal('.p-cuaca', {
+            delay: 0.6,
+            scale: 0.8
+        });
+    </script>
+</body>
+</html>
