@@ -101,3 +101,41 @@
   color: #6d6d6d;
   text-transform: capitalize;
 }
+
+.service-card-diff {
+  margin-top: 110px;
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 24px;
+  }
+  .service-kiri {
+    width: 100%;
+  }
+  .service-kanan {
+    width: 100%;
+    padding: 24px;
+  }
+  .service-card-group {
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    gap: 18px;
+  }
+  #decorRectService {
+    width: 100%;
+    display: none;
+  }
+  .service-card-diff {
+    margin-top: 0;
+  }
+  .service-card {
+    margin-left: 0;
+    width: 100%;
+  }
+}

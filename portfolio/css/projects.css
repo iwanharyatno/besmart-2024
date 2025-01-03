@@ -33,3 +33,18 @@
 .project-name {
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .projects {
+    padding: 24px;
+  }
+  .project-lists {
+    flex-direction: column;
+  }
+}

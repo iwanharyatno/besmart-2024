@@ -31,3 +31,18 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .experience-project-card {
+    width: 100%;
+  }
+  .experience-image {
+    width: 100%;
+  }
+  .experience-project-description {
+    width: 100%;
+  }
+  .experience {
+    padding: 24px;
+  }
+}

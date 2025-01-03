@@ -7,6 +7,9 @@
   align-items: center;
   padding: 20px 0;
   z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .nav-title {
   font-size: 20px;
@@ -80,6 +83,9 @@
 
 .hero-kanan {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar {
@@ -87,4 +93,49 @@
   position: absolute;
   bottom: 0;
   right: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+    padding-top: 0;
+  }
+  .hero-kiri {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-description {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bg {
+    width: 400px;
+    transform: translateX(-5%);
+  }
+
+  .badge {
+    margin-top: 0;
+  }
 }

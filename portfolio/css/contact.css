@@ -43,4 +43,18 @@
   text-decoration: none;
   justify-content: center;
   gap: 12px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-card {
+    width: 100%;
+  }
+  .contact-text {
+    width: 100%;
+  }
+  .contact {
+    padding: 24px;
+  }
+  
 }

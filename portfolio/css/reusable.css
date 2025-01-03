@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
+
 /* container */
 .max-container {
   max-width: 1440px;
@@ -15,8 +16,19 @@
   align-items: center;
   justify-items: center;
 }
+
 .padding-container {
-  padding: 0 24px;
+  padding: 24px;
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* reusable section class */
@@ -26,12 +38,14 @@
   color: red;
   text-transform: uppercase;
 }
+
 .section-title {
   font-size: 40px;
   font-weight: bold;
   color: #272727;
   text-transform: capitalize;
 }
+
 .text-description {
   font-size: 16px;
   color: #272727;
@@ -41,9 +55,11 @@
 .text-sm {
   font-size: 16px;
 }
+
 .text-md {
   font-size: 24px;
 }
+
 .text-lg {
   font-size: 48px;
 }
@@ -83,4 +99,18 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .max-container {
+    padding: 0 24px;
+  }
+
+  .text-xl {
+    font-size: 24px;
+  }
+
+  .padding-container {
+    padding: 24px 0;
+  }
 }

@@ -31,3 +31,12 @@
   display: flex;
   gap: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding: 24px;
+  }
+  .testimonial-description {
+    width: 100%;
+  }
+}
