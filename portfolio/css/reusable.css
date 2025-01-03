@@ -24,11 +24,13 @@
 html {
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 /* reusable section class */
