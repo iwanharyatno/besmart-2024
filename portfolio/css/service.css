@@ -73,6 +73,7 @@
   width: 40%;
   display: flex;
   flex-direction: column;
+  padding: 24px;
 }
 .service-kanan-description {
   text-align: justify;

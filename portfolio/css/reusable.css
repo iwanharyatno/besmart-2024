@@ -74,7 +74,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
   background: linear-gradient(180deg, #63cdfa 0%, #1875ff 100%);
   padding: 12px 24px;
   border-radius: 50px;
